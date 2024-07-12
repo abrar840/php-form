@@ -1,13 +1,8 @@
 <html>
 
-
-
 <body>
 
     <?php
-
-
-
 
     session_start();
 
@@ -54,19 +49,12 @@
 
 
 
-
-
-
-
-
-
-
     $query2 = "select * from  users where 1";
     $result = $conn->query($query2);
 
     if ($result->num_rows > 0) {
 
-          $data = [];
+        $data = [];
 
 
         while ($row = $result->fetch_assoc()) {
@@ -77,11 +65,7 @@
         }
 
 
-
         $_SESSION['data'] = $data;
-
-
-
 
         header("location:OuTPutForm.php");
     }

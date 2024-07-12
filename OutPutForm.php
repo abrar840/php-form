@@ -8,11 +8,16 @@
 
 
     <style>
+    table {
+        width: 20%;
+    }
 
-    table{width:20%;}
-    table, th, td {
-            border: 1px solid black;
-        } </style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+    </style>
 </head>
 
 <body>
@@ -27,15 +32,7 @@
 
             <th>email</th>
 
-
-
-
-
         </tr>
-
-
-
-
 
 
 
@@ -47,34 +44,17 @@
 
         ?>
 
-
-
-
         <?php foreach ($data as $row) { ?>
 
         <tr>
 
             <td> <?php echo $row['name'] ?> </td>
             <td> <?php echo $row['email'] ?> </td>
-            
-
-
-
         </tr>
-
-
-
 
         <?php } ?>
 
-
-
-
-
-
     </table>
-
-
 
 </body>
 
